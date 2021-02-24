@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block title %}Detail{% endblock %}
+
+{% block content %}
+<h2>Detail</h2>
+<p>Site name : {{object.site_name}}</p>
+<p>Site URL&nbsp;&nbsp; : {{object.url}}</p>
+<br>
+<a href="{% url 'list' %}"><button type="button" style="border:none;">Ok</button></a>
+{% endblock %}
+
+</body>
+</html>
